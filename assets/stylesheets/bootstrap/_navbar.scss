@@ -20,6 +20,10 @@
   @media (min-width: $grid-float-breakpoint) {
     border-radius: $navbar-border-radius;
   }
+  
+  .caret {
+    display: none;
+  }
 }
 
 
@@ -381,11 +385,6 @@
   }
   .navbar-right {
     float: right !important;
-  margin-right: -$navbar-padding-horizontal;
-
-    ~ .navbar-right {
-      margin-right: 0;
-    }
   }
 }
 
