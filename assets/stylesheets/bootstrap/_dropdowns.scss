@@ -83,6 +83,16 @@
   }
 }
 
+// Danger state
+.dropdown-menu > li.danger > a {
+  color: $dropdown-link-danger-color;
+  
+  &:hover,
+  &:focus {
+    color: $dropdown-link-danger-hover-color;
+  }
+}
+
 // Active state
 .dropdown-menu > .active > a {
   &,
