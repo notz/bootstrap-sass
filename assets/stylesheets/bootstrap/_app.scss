@@ -2,6 +2,7 @@
 html, body {
   height: 100%;
   overflow: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 h4.sub-bottom small {
@@ -41,7 +42,7 @@ section {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: $padding-base-vertical $padding-base-horizontal;
+  padding: $padding-large-vertical $padding-large-horizontal;
   background-color: #fcfaf7;
   @media (max-width: $screen-sm-max) {
     padding: 0;
@@ -122,14 +123,14 @@ section {
 }
 .col-messages-3 {
   left: 20%;
-  width: 55%;
+  width: 60%;
   background-color: #fafcfa;
 }
 .col-messages-3 > .panel {
   background-color: #fafcfa;
 }
 .col-dossier {
-  width: 25%;
+  width: 20%;
   right: 0;
 }
 .col-dossier.collapse {
@@ -141,7 +142,14 @@ section {
   border-bottom-left-radius: 0;
 }
 .col-dossier > .panel > p {
+  color: $gray;
   margin: $padding-base-vertical $padding-base-horizontal;
+  font-size: 14px;
+}
+.col-dossier > .panel > p h6 {
+  color: $brand-primary;
+  text-transform: uppercase;
+  margin-bottom: 0 !important;
 }
 
 
@@ -187,7 +195,7 @@ section {
   -ms-user-select: none;
 }
 .data-panel .indicator {
-  margin: $padding-base-vertical auto;
+  margin: $padding-large-vertical auto;
   display: block;
 }
 .data-panel > div {

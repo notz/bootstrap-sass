@@ -20,7 +20,7 @@
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin: $padding-base-vertical $padding-base-horizontal;
+  margin: $padding-large-vertical $padding-large-horizontal;
 }
 .chat-message-compose .textarea {
   border-radius: $border-radius-base;
@@ -30,6 +30,7 @@
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  background-color: #fff;
 }
 .chat-message-compose .btn-wrapper {
   margin-left: $padding-base-horizontal;
@@ -53,9 +54,9 @@
   border-radius: $border-radius-base;
   margin: ($padding-large-vertical / 2) $padding-large-horizontal;
   padding: $padding-small-vertical $padding-base-horizontal;
-  min-width: 50%;
   max-width: 80%;
   word-wrap: break-word;
+  line-height: 1.5;
 }
 .data-panel.message div.info .bubble {
   float: left;
@@ -72,14 +73,15 @@
 }
 .data-panel.message div.info .avatar, .data-panel.message div.incoming .avatar {
   position: absolute;
-  width: 42px;
-  height: 42px;
-  top: -30px;
+  width: 37px;
+  height: 37px;
+  top: -25px;
   left: 12px;
   border: 2px solid #fff;
 }
 .data-panel.message .date {
   display: block;
+  opacity: 0.5;
 }
 .data-panel.message div.card .bubble {
   background-color: #fff;
